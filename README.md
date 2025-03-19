@@ -150,6 +150,39 @@ To fetch and mock bulk data, you can navigate to the homepage (`/`) and click on
 
 ---
 
+## Database Schema
+
+The database used in this project is an SQLite database, named `weather_data.db`. Below is the schema of the main table, which stores the weather data.
+
+Table: `weather_data`
+
+This table contains the processed weather data.
+
+| Column Name   | Data Type | Description                                                                           |
+| ------------- | --------- | ------------------------------------------------------------------------------------- |
+| `id`          | INTEGER   | Primary key, auto-incremented identifier for each record.                             |
+| `city`        | TEXT      | The name of the city for which the weather data is recorded. (e.g., "Berlin")         |
+| `date`        | TEXT      | The date when the weather data was recorded, stored as a string (e.g., "2021-05-10"). |
+| `temperature` | REAL      | The recorded temperature for the city on the given date. (e.g., 23.5)                 |
+| `weather`     | TEXT      | The weather condition for the city on the given date (e.g., "Sunny", "Rainy").        |
+
+#### Example Record:
+
+| id  | city     | date       | temperature | weather |
+| --- | -------- | ---------- | ----------- | ------- |
+| 1   | Berlin   | 2021-05-10 | 23.5        | Sunny   |
+| 2   | Paris    | 2021-05-10 | 18.0        | Cloudy  |
+| 3   | New York | 2021-05-10 | 15.3        | Rainy   |
+
+---
+
+Notes:
+
+- Indexes: To optimize performance for querying by city and date, appropriate indexes are created in the database for these columns.
+- Data Integrity: The database ensures that no rows with missing or invalid city or date information can be inserted, maintaining the integrity of the data.
+
+---
+
 ## Conclusion
 
 This project provides a simple yet powerful way to manage and visualize weather data through a Flask web application. It fetches, processes, and displays weather data in an interactive and engaging way.
