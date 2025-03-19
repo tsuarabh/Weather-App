@@ -2,7 +2,7 @@
 
 This is a Flask-based web application that provides weather data analytics and visualization. The app allows you to:
 
-- Fetch weather data from an external source.(Openweather API)
+- Fetch weather data from an external source.(CSV file)
 - Process the data using ETL (Extract, Transform, Load) operations.
 - Display the processed data in an interactive table and graph.
 
