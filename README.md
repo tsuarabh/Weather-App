@@ -156,7 +156,7 @@ This project provides a simple yet powerful way to manage and visualize weather 
 
 ## Project Screenshots
 
-I've also added images of the working project in the images folder. Below is the description of each image to provide clarity on how the project functions and the UI elements.
+I've also added images of the working Weather App project in the images folder. Below is the description of each image to provide clarity on how the project functions and the UI elements.
 
 ## image 1- Dashboard
 
@@ -186,7 +186,7 @@ Resource Constraints: As the application runs locally for testing or development
 
 ## image 3- Health Check
 
-To get the results shown in the image-"email" provided in the repository, you need to first ensure that the necessary services are running. Below are the commands you need to execute: `curl http://127.0.0.1:5000/etl/health`
+To get the results shown in the image-"Health check" provided in the repository, you need to first ensure that the necessary services are running. Below are the commands you need to execute: `curl http://127.0.0.1:5000/etl/health`
 The command sends an HTTP GET request to the `/etl/health` endpoint on the local server running at `127.0.0.1` on port `5000`. It is typically used to check the health status of the ETL service and ensure it is running properly.
 
 The application includes a health check endpoint to monitor the health of the system. This endpoint ensures that all services (such as the database, API, and backend) are operating correctly.
